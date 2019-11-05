@@ -1,4 +1,4 @@
-# NavigationPage
+# Navigation
 1. 安装parcel
 ```
 npm install -g parcel-bundler
