@@ -147,7 +147,7 @@ $('.item-list-increase').on('click', function () {
 
   if (newurl && (newurl.indexOf('https://') !== -1 || newurl.indexOf('http://')) !== -1) {
     var newitem = {
-      url: newurl.replace('https://', '').replace('http://', '').replace('www.', ''),
+      url: newurl.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''),
       trueUrl: newurl
     };
     data.push(newitem);
@@ -169,4 +169,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', JSON.stringify(data));
 };
 },{}]},{},["d6sW"], null)
-//# sourceMappingURL=main.b033dd96.js.map
+//# sourceMappingURL=main.27e97d7b.js.map
