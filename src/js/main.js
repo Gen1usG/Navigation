@@ -40,7 +40,7 @@ $('.item-list-increase').on('click', function () {
     let newurl = prompt('请输入新增的网址')
     if (newurl && (newurl.indexOf('https://') !== -1 || newurl.indexOf('http://')) !== -1) {
         let newitem = {
-            url: newurl.replace('https://', '').replace('http://', '').replace('www.', ''),
+            url: newurl.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''),
             trueUrl: newurl
         }
         data.push(newitem)
