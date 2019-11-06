@@ -1,4 +1,13 @@
-let data = JSON.parse(localStorage.getItem('x')) || []
+let data = JSON.parse(localStorage.getItem('x')) || [
+    {
+        url: 'baidu.com',
+        trueUrl: 'https://www.baidu.com'
+    },
+    {
+        url: 'jquery123.com',
+        trueUrl: 'https://www.jquery123.com'
+    }
+]
 
 let render = function () {
     $('.item-list:not(.item-list-increase)').remove()

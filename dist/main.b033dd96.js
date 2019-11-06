@@ -118,7 +118,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"d6sW":[function(require,module,exports) {
-var data = JSON.parse(localStorage.getItem('x')) || [];
+var data = JSON.parse(localStorage.getItem('x')) || [{
+  url: 'baidu.com',
+  trueUrl: 'https://www.baidu.com'
+}, {
+  url: 'jquery123.com',
+  trueUrl: 'https://www.jquery123.com'
+}];
 
 var render = function render() {
   $('.item-list:not(.item-list-increase)').remove();
@@ -163,4 +169,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', JSON.stringify(data));
 };
 },{}]},{},["d6sW"], null)
-//# sourceMappingURL=main.9c40f31d.js.map
+//# sourceMappingURL=main.b033dd96.js.map
