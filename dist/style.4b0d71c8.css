@@ -33,11 +33,14 @@ body{
     align-items: center;
     padding:28px;
 }
-#main-header form{
-    min-width: 410px;
-    display: flex;
-    justify-content: space-between;
+@media (min-width:500px){
+    #main-header form{
+        min-width: 410px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
 #main-header .search-input,#main-header .search-button{
     height: 40px;
 }
@@ -148,4 +151,4 @@ body{
 }
 
 
-/*# sourceMappingURL=style.a6c1342b.css.map */
+/*# sourceMappingURL=style.4b0d71c8.css.map */
